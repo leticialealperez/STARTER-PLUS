@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTML</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        .coluna-sobrenome {
+            width: 200px;
+        }
+
+        /* odd = linhas ímpares */
+        /* even = linhas pares */
+        /* 3n = a cada 3 linhas */
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 255, 0.544);
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <!-- <table>
+        <tr>
+            <th>Nome</th>
+            <th class="coluna-sobrenome">Sobrenome</th>
+            <th>Idade</th>
+            <th>Endereço</th>
+            <th>Número</th>
+        </tr>
+
+        <tr>
+            <td>João</td>
+            <td class="coluna-sobrenome" rowspan="2">da Silva</td>
+            <td>26 anos</td>
+            <td rowspan="2" colspan="2">Rua dos Bobos, 0</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>30 anos</td>
+        </tr>
+    </table> -->
+
+    <hr>
+    <table>
+        <caption>Tabela de Usuários</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Joao</td>
+                <td>da Silva</td>
+                <td>26 anos</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>da Silva</td>
+                <td>30 anos</td>
+            </tr>
+            <tr>
+                <td>Paola</td>
+                <td>da Silva</td>
+                <td>30 anos</td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td>da Silva</td>
+                <td>30 anos</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="3">Growdev</td>
+        </tfoot>
+ 
+    </table>
+    
+</body>
+</html>
