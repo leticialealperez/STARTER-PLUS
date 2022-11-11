@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .inline-element {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            display: inline-block;
+            margin: 30px;
+        }
+
+        th, td {
+            padding: 10px;
+            
+        }
+
+        .text-right {
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- LISTA NÃO-ORDENADA -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>
+            Item 3
+            <ol>
+                <li class="inline-element">
+                    <a href="https://open.spotify.com/user/leticialealp-br">
+                        <img style="width: 50px;" src="./spotify.png" alt="Logo do Spotify">
+                    </a>
+                </li>
+                <li class="inline-element">
+                    <a href="https://open.spotify.com/user/leticialealp-br">
+                    <img style="width: 50px;" src="./spotify.png" alt="Logo do Spotify">
+                    </a>
+                </li>
+                <li class="inline-element">
+                    <a href="https://open.spotify.com/user/leticialealp-br">
+                        <img style="width: 50px;" src="./spotify.png" alt="Logo do Spotify">
+                    </a>
+                </li>
+                <li class="inline-element">
+                    <a href="https://open.spotify.com/user/leticialealp-br">
+                        <img style="width: 50px;" src="./spotify.png" alt="Logo do Spotify">
+                    </a>
+                </li>
+            </ol>
+        </li>
+    </ul>
+
+    <!-- LISTA ORDENADA -->
+    <ol>
+        <li>Primeiro Item</li>
+        <li>Segundo Item</li>
+        <li>Terceiro Item</li>
+    </ol>
+
+    <!-- LISTA DE DESCRIÇÃO -->
+    <dl>
+        <dt>Pagodinho</dt>
+        <dd>Toda sexta</dd>
+        <dd>É massa demais</dd>
+
+        <dt>Café</dt>
+        <dd>bebida quente</dd>
+        <dd>sem açucar é melhor</dd>
+    </dl>
+
+    <hr>
+
+    <table>
+        <caption>Minha tabela</caption>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Preço(R$)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pilsen</td>
+                <td>5,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">APA</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>15,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td class="text-right" colspan="2">R$30,00</td>
+        </tfoot>
+
+    </table>
+
+    <table>
+       
+    
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Preço(R$)</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pilsen</td>
+                <td>5,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>IPA</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>APA</td>
+                <td>15,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td class="text-right" colspan="2">R$30,00</td>
+        </tfoot>
+    
+    </table>
+
+</body>
+</html>
