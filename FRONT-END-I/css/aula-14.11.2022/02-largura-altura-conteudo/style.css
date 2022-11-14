@@ -17,9 +17,13 @@ body {
     /* medidas fixas/absolutas = px */
     /* medidas relativas = % */
     /* width: 300px; */ /*absoluta de definir uma largura*/ 
-    width: 200px; /* relativa de definir a largura de um elemento*/
+    /* width: 30%; */ /* relativa de definir a largura de um elemento*/
+    width: 200px; 
     /* height: 700px; */
+    /* height: 30%; */
     height: 200px;
+
+    /* PADDING'S */
 /*  padding-top: 20px;
     padding-left: 20px;
     padding-right: 30px;
