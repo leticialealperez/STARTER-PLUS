@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* medidas relativas = % */
+    /* medidas relativas = vw => view width 0 a 100 */
+    /* medidas relativas = vh => view height 0 a 100 */
+    width: 100vw;
+    height: 100vh;
+    background-color: #3a3a3a;
+}
+
+.exemplo-1 {
+    background-color: cadetblue;
+    /* medidas fixas/absolutas = px */
+    /* medidas relativas = % */
+    /* width: 300px; */ /*absoluta de definir uma largura*/ 
+    width: 200px; /* relativa de definir a largura de um elemento*/
+    /* height: 700px; */
+    height: 200px;
+/*  padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px; */
+    /* padding: 25px 30px 10px 20px; */ /*shorthand - sentido horário */
+    /* padding: 30px 50px;  *//*shorthand - vertical e horizontal - eixo y e eixo x */
+   /*  padding: 50px; */ /* em ambos os eixos terá 50px de padding */
+
+
+    /* MARGENS*/
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px; */
+    /* margin: 30px auto 20px auto; */
+    /* margin: 30px auto; */
+    margin: 30px;
+
+
+    /* BORDER */
+    /* border-width: 10px;  *//* largura da borda */
+    /* border-style: solid; */ /* estilo da borda */
+   /*  border-color: aquamarine;  *//*cor da borda */
+    /* border-radius: 100%; */ /* arredondamento */
+    border-radius: 100%; 
+
+    /*atalho */
+    border: 5px solid pink;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; 
+}
+
+.exemplo-2 {
+    background-color: brown;
+    width: 400px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+span {
+    color: aliceblue;
+}
+
+.exemplo-3 {
+    background-color: coral;
+    width: 90%;
+    padding: 20px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
