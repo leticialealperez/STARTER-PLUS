@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section {
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: calc(50vh - 25px);
+    left: calc(50vw - 125px);
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.amarelo {
+    background-color: yellow;
+    left: 0px;
+}
+
+.verde {
+    background-color: green;
+    left: 50px;
+}
+
+.vermelho {
+    background-color: red;
+    left: 100px;
+}
+
+.azul {
+    background-color: blue;
+    left: 150px;
+}
+
+.rosa {
+    background-color: pink;
+    left: 200px;
+}

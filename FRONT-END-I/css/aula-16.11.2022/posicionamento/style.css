@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.azul {
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+    /* por padrão todo elemento tem um posicionamento estático */
+    /* position: static; */
+    position: absolute;
+    /* left, right, top, bottom */
+    right: 0px;
+    top: 0px;
+}
+
+.verde {
+    width: 20%;
+    height: 20vh;
+    background-color: green;
+    position: absolute;
+    bottom: calc(50% - 10vh);
+    left: calc(50% - 10%);
+}
+
+.vermelha {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    /* position: static; */
+    position: absolute;
+    /* left, right, top, bottom */
+    left: 0px;
+    top: 0px;
+    /* opacity: 0; */ /* 0 a 1 */
+}
+
+/*
+
+Criar uma página HTML contendo 5 div's (cada uma de uma cor e de tamanho 50px x 50px
+
+- Uma ao lado da outra e ao centro da tela
+
+
+*/
