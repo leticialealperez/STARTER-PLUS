@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* elemento root = html - vem com 16px */
+
+/* px - absoluto, não modifica independentemente da configuração do browser ou tamanho da tela*/
+
+html {
+    font-size: 62.5%; /* redefinindo o root para equivaler a 10px */ 
+    scroll-behavior: smooth; /* transição entre uma página e outra */ 
+}
+
+.pai {
+    /* font-size: 30px; */
+    background-color: yellow;
+    width: 100vmax; /*vw - largura da viewport - 0 a 100 (1 viewport) */
+    height: 100vh; /* vh - altura da viewport - 0 a 100 (1 viewport)*/
+}
+
+/* em - relativo ao elemento pai */
+/* rem - relativo ao elemento root = html */
+
+p {
+    font-size: 1.8rem; /* 0 ate 1 (0.1, 0.2, 0.3... 1*/
+}
+
+.color-one {
+    font-size: 50px;
+    background-color: green;
+}
+
+.paragrafo-teste {
+    font-size: 50%; /* 15px */
+}
+
+
+
+.color-two {
+    background-color: violet;
+}
