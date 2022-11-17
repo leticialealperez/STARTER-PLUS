@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./pexels-lukas-574071.jpg);
+    background-size: cover;
+    
+}
+
+.lista-redes li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+}
+
+.lista-redes li img:hover{
+    box-shadow: 0 0 20px #57219e;
+}
+
+.lista-redes li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav > ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    margin: 0 0 15px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+    font-size: 18px;
+}
+
+header:hover{
+    background-color: pink;
+}
+
+p {
+    line-height: 1.6rem;
+}
