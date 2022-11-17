@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+
+.div-1 {
+    right: 0;
+}
+
+.div-2 {
+    right: 0;
+    bottom: 0;
+}
+
+.div-3 {
+    left: 0;
+    bottom: 0;
+}
+
