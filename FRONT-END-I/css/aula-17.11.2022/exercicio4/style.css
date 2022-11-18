@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    position: relative;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+
+.div1 {
+    right: 0;
+    bottom: 0;
+}
+
+.div2 {
+    bottom: 0;
+    right: 105px;
+}
+
+.div3{
+    bottom: 0;
+    right: 210px;
+}
+
+.div4 {
+    right: 0;
+    bottom: 105px;
+}
+
+.div5 {
+    right: 105px;
+     bottom: 105px;
+}
+
+.div6 {
+    bottom: 210px;
+    right: 0;
+}
+
+.div7 {
+    left: 0;
+    top: 0;
+}
+
+.div8 {
+    left: 105px;
+    top: 0;
+}
+
+.div9 {
+    left: 210px;
+    top: 0;
+}
+
+.div10 {
+    left: 0;
+    top: 105px;
+}
+
+.div11 {
+    left: 105px;
+    top: 105px;
+}
+
+.div12 {
+    top: 210px;
+    left: 0;
+}
