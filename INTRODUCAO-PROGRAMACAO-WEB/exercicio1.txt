@@ -1,0 +1,60 @@
+[ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+- Escreva um algoritmo para buscar apenas os números positivos da lista
+
+Passo 1: Verificar o dado; 
+Passo 2: Identificar o tipo de dado recebido; 
+Passo 3: Selecione um numero por vez; 
+Passo 4: Após selecionar o numero diminua por ele mesmo, se o resultado fica menor que zero ignore. Se não selecione ele;
+Passo 5: Após selecionar o numero, guarde o valor; 
+Passo 6: Mostre o resultado; 
+
+
+
+Observar números da lista;
+Sublinhar números da lista que sejam  maiores que 0;
+Escrever números sublinhados.
+
+* ler 1º número;
+* se maior que zero, "identifica";
+* ler número sequente;
+* se maior que zero, "identifica";
+* repete até checar o último número;
+* listar todos os números "identificados";
+* fim.
+
+
+numero atual = 50;
+
+selecione o numero atual da lista 
+
+ o numero atual é maior a 0? 50
+
+	se sim 
+		é positivo
+		anotar o numero
+	senão 
+		é negativo
+		descartar o numero
+
+tem algum numero na lista depois desse?
+	
+	se sim 
+		atualizar o numero atual para o proximo numero 
+		volte para o passo um
+	senão
+		mostrar todos os numeros anotados
+		finalizar algoritmo
+
+
+LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problema
+
+-> dados - input -> entrada de dados ->  18
+
+-> informação - output -> saída/resultado -> maior idade
+
+-> estruturas condicionais - desvio de fluxos
+
+-> estruturas de repetição - formas de repetir um determinado conjunto de instruções
+
+-> rotinas - conjunto de de instruções que são executadas conforme a necessidade

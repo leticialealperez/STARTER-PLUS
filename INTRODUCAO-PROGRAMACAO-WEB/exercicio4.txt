@@ -1,0 +1,24 @@
+[ -31, -18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+?
+
+[-31, -18, 50, 98,..., 1]
+
+[1, ]
+
+- Escreva um algoritmo para buscar apenas os números repetidos na lista
+
+
+
+
+LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problema
+
+-> dados - input -> entrada de dados ->  18
+
+-> informação - output -> saída/resultado -> maior idade
+
+-> estruturas condicionais - desvio de fluxos
+
+-> estruturas de repetição - formas de repetir um determinado conjunto de instruções
+
+-> rotinas - conjunto de de instruções que são executadas conforme a necessidade

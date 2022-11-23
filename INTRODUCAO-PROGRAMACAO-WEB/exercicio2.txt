@@ -1,0 +1,56 @@
+[ -31, -18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+
+- Escreva um algoritmo para buscar apenas os números (pares E positivos) da lista
+
+Verificar os números da lista;
+Verificar se o primeiro número é maior do que zero; 
+Se sim, anotar esse número em uma outra linha
+Se não, descartar esse número
+Após isso, realizar esse mesma verificação com os proximos numeros, um de cada vez, ate verificar todos os números da lista;
+Com os números anotados em outra linha;
+Verificar se o primeiro número dessa nova linha que foi feita, quando dividido por 2, o resto dessa divisão é zero;
+Se não, apagar o número
+Se sim, deixar onde ele esta
+Seguir para o número seguinte da nova lista até todos serem verificados.
+
+18 % 2 = 0 , 50, ...
+
+
+1  verificar o 1° numero da lista
+2  se o primeiro numero é maior que zero
+3  guardar o numero no box
+4  pegar o numero do box guardado 
+5  se ele tiver o final 0 2 4 6 8
+6  guardar numero no box1
+7  se tiver mais numeros 
+8  Voltar ao passo 1
+9 se nao 
+10 quando terminar os numeros
+11 pegar os numeros guardados no box1
+12 mostrar numeros guardadosno box1
+
+
+
+Passo 1 = Escreva os numeros desejados: 
+Passo 2 = Numeros: [ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+Passo 3 = Pegar um numero da listagem em ordem do primeiro até o ultimo
+Passo 4 = Se for possivel divir esse numero por ele mesmo em partes iguais, ele é par, passar para 
+o proximo passo, senão descarta-lo
+Passe 5 = Observar se esse numero é maior que zero
+Passo 6 = Se sim, anotar ele
+Passe 7 = Se não, descartar
+Passo 8 = Repetir o passo 3 até finalizar os numeros listados
+
+
+LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problema
+
+-> dados - input -> entrada de dados ->  18
+
+-> informação - output -> saída/resultado -> maior idade
+
+-> estruturas condicionais - desvio de fluxos
+
+-> estruturas de repetição - formas de repetir um determinado conjunto de instruções
+
+-> rotinas - conjunto de de instruções que são executadas conforme a necessidade

@@ -1,0 +1,26 @@
+1 - Utilize a lista de números abaixo, construa um algoritmo (conjuntos de passos por escrito) para resolver cada problema conforme o solicitado:
+
+- Escreva um algoritmo para buscar apenas os números positivos da lista
+
+- Escreva um algoritmo para buscar apenas os números pares e positivos da lista
+
+- Escreva um algoritmo para buscar apenas os números ímpares (positivos ou negativos) da lista
+
+- Escreva um algoritmo para buscar apenas os números repetidos na lista
+
+
+[ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+
+
+LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problema
+
+-> dados: 18 - input -> entrada de dados
+
+-> informação - output -> representação do mínimo para maior idade - idade de alguém - pessoa avoada
+
+-> estruturas condicionais - desvio de fluxos
+
+-> estruturas de repetição - formas de repetir um determinado conjunto de de instruções
+
+-> rotinas - conjunto de de instruções que são executação conforme a necessidade

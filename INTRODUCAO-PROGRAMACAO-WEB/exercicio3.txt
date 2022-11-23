@@ -1,0 +1,79 @@
+[ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+
+- Escreva um algoritmo para buscar apenas os números ímpares (positivos ou negativos) da lista
+
+passo 1 : verificar numeros da lista;
+passo 2: toda vez que a soma da divisao for 1 , esse numero sera impar e positivo;
+passo 3: quando o resto da divisao for 0  pular esse numero ;
+passo 4: fazer divisao de todos os numeros da lista;
+passo 5: quando for impar e positivo = guardar numero;
+passo 6: quando for par = descarta numero.
+
+
+
+* Verefique se teve a entrada de alguma informação;
+
+* se sim execute os proximos passos:
+ 
+  * selecione o valor e divida ele por dois, se o resto for maior que zero armazene ele, se nao descarte o valor;
+    
+*  repita todo o processo com o proximo numero ate o final de todos os numeros, apos isso mostre todos os numeros que passaram pela verificação
+
+
+
+1º escreva a lista de números a serem  expostos a análise.
+2º   -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4
+3º analisar a lista inserida anteriormente.
+4º  analisar o primeiro numero se dividido por 2  e o resto seja 1. 
+5º se sim , anotar.
+6º se não descartar.
+7º repetir o passo 3, 4, 5 e 6, ate verificar toda a lista.
+8º mostrar resultado anotado que corresponde a lista de números impares.
+
+[ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+-31
+
+1° - verificar os numeros da lista 
+2° - verificar o primeiro numero  da esquerda para direita
+3° - dividir por 2, 
+4° - se o resto for igual a 1, colocar o mesmo na linha abaixo e prosseguir para o proximo item da lista
+5° - senao prosseguir para o proximo item da lista
+6° - realizar o mesmo procedimento até analisar todos itens da lista
+
+
+Ler primeiro número da lista : [ -31, 18, 50, 98, 4, -53, 1, -8, 15, 89, 24, -3, 0, 10, 15, 47, 50, 15, 1, 4 ]
+
+
+Passo 1 
+             ler o número
+             dividir o número por 2 e se o resto da divisão for diferente de 0 (então o número é ímpar)
+             
+               se o número for ímpar
+                     deixar o número armazenado e seguir para o próximo passo
+
+   senão
+         descartar o número  e seguir para o próximo passo
+Passo 2 Existe um próximo  número na lista depois desse?
+	
+	se sim 
+		atualizar o número atual para o próximo número da lista e
+		volte para o passo 1
+	senão
+		mostrar todos os números armazenados
+ 
+	fim
+
+
+
+LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problema
+
+-> dados - input -> entrada de dados ->  18
+
+-> informação - output -> saída/resultado -> maior idade
+
+-> estruturas condicionais - desvio de fluxos
+
+-> estruturas de repetição - formas de repetir um determinado conjunto de instruções
+
+-> rotinas - conjunto de de instruções que são executadas conforme a necessidade
