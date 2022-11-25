@@ -4,11 +4,11 @@ let percentual = 50;
 
 
 // manipulação de dados - aritmetica, comparacao, atribuição...
-let resultado =  30 * percentual  / 100;
+let resultado =  ( numero * percentual )  / 100;
 
 
 // informacao - SAIDA DA INFORMAÇÃO
-console.log(`${percentual} de ${numero} é ${resultado}`);
+console.log(`${percentual}% de ${numero} é ${resultado}`);
 
 
 
