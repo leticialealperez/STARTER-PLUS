@@ -90,13 +90,13 @@ let num2 = 20;
 // num1 == num2 (?) true - ignora o tipo e considera apenas o valor
 // num1 != num2 (?) false - ignora o tipo e considera apenas o valor
 
-// num1 === num2 (?) false - identico - igual em tipo e em valor
+// num1 === num2 (?) false - identico - precisa ser igual em tipo e em valor
 // num1 !== num2 (?) true - não são identicos - igual em valor mas não em tipo
 
 let num1 = 5;
 let num2 = 10;
 
-// num1 > num2 -> false  sempre o da esquerda submetido à comparação com o da direita
+// num1 > num2 -> false  --------  sempre o da esquerda submetido à comparação com o da direita
 // num1 < num2 -> false
 
 // num1 >= num2 -> maior(F) OU igual(V) => false
