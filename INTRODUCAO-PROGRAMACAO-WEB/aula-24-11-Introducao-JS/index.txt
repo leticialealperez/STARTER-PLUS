@@ -10,37 +10,45 @@ LÓGICA PROGRAMAÇÃO - aplicar todos esses fundamentos para resolver um problem
 
 */
 
-// DADOS - tipos
+// DADOS - tipos - 1a etapa dentro do processo de desenvolvimento do algoritmo
 
 // 18 - number - idade, altura, peso, valor - inteiro ou real
 
 // 'a' ou 'abc' - string - conjunto de caracters - '!@#%¨&98()787776' -> string 
 // nome, cidade, email, cpf, data
 
-// true ou false - boolean
+// true ou false - boolean 
 // ativo, maior, promocao
+
 
 // DECLARAÇÃO DE VARIÁVEIS - input
 
 // var -> declaração global -> esta caindo em desuso
 
-// let -> declaração local - tenho acesso somente onde declaração/criada
+// let -> declaração local - tenho acesso somente onde declaração/criada { contexto }
 
 // const -> declaração local - porém não pode ser mofificada/reatribuida
 
 /* 
+let idade;
 
 let idade = 18;
 let nome = 'João';
-let ativo = true;
+
 
 
 const altura = 73.5;
 altura = 87.0; // ISSO DÁ ERRO - cuidado!
 
+let ativo = true;
 ativo = false; // ISSO DÁ BOM - vai em frente!
 
 */
+
+
+
+
+
 
 // OPERADORES 
 
@@ -83,6 +91,8 @@ let num2 = 20;
 
 
 // DE COMPARAÇÃO ->  > (maior que), < (menor que), >= (maior OU igual), <= (menor OU igual), == (igual), != (diferente), === (estritamente igual), !== (estritamente diferente)
+
+valor1 COMPARAÇÃO valor2  ? --> retorna um resultado lógico -> TRUE ou FALSE
 
 //let num1 = '5';
 //let num2 = 5;
