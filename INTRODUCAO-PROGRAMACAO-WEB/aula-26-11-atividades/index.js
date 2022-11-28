@@ -207,7 +207,7 @@ if(idade >= 16) {
     // SIM, pode votar
 
     // obrigatório?
-    if(  ( idade >= 18 ) && ( idade <= 65)  ) {
+    if(  (idade >= 18) && (idade <= 65)  ) {
 
         // SIM, possui idade entre 18 e 65 anos
         console.log(`Já pode votar. Idade ${idade}`);
