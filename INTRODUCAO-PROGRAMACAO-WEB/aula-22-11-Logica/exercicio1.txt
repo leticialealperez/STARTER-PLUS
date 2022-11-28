@@ -28,7 +28,7 @@ numero atual = 50;
 
 selecione o numero atual da lista 
 
- o numero atual é maior a 0? 50
+ o numero atual é maior a 0?
 
 	se sim 
 		é positivo
