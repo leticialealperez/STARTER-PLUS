@@ -180,7 +180,7 @@ considerar o mês em que a pessoa nasceu).
 
   valorA && valorB = V
 
-  só será verdadeiro se ambas as condições forem true
+  só será true se ambas as condições forem true
 
 */
 
@@ -206,19 +206,22 @@ let idade = anoAtual - anoNascimento;
 if(idade >= 16) {
     // SIM, pode votar
 
+    // obrigatório?
     if(  ( idade >= 18 ) && ( idade <= 65)  ) {
 
-        // 27 >= 18 ? V
-        // 27 <= 65 ? V
-        //  V
+        // SIM, possui idade entre 18 e 65 anos
         console.log(`Já pode votar. Idade ${idade}`);
         console.log(`Voto é obrigatório`);
+    
     } else {
 
+        // NAO, idade 16 ou 17 anos (maior ou igual a 16 e menor que 18), ou idade acima de 65
         console.log(`Já pode votar. Idade ${idade}`);
         console.log(`Voto é opcional`);
     }
 
 } else {
+
+    // NAO, é menor de idade
     console.log(`A idade é ${idade}, não pode votar. Menor de idade!`)
 }
