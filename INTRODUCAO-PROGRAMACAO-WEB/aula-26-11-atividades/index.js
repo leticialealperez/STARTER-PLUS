@@ -28,54 +28,55 @@
 
 */
 
-/* 
+ 
 
-if(numeroAtual > 0) {
-    // SIM - aqui só executa se a resposta para a condição ou comparação for SIM/true
-    // é positivo
+// if(numeroAtual > 0) {
+//     // SIM - aqui só executa se a resposta para a condição ou comparação for SIM/true
+//     // é positivo
 
-} 
+// } 
 
-else {
-    // NAO - aqui só executa se a resposta para a condição ou comparação for NAO/false
-    // é negativo
-} 
-
-*/
-
-/* // etapa 1
-let primeiro = 10;
-let segundo = 20;
+// else {
+//     // NAO - aqui só executa se a resposta para a condição ou comparação for NAO/false
+//     // é negativo
+// } 
 
 
-// etapa 2 e 3
-if(primeiro > segundo) {
-    console.log(`O número ${primeiro} é o maior.`);
 
-} else if(segundo > primeiro) {
-    console.log(`O número ${segundo} é o maior.`);
+// etapa 1
+// let primeiro = 10;
+// let segundo = 20;
 
-} else {
-    console.log(`Os numeros ${primeiro} e ${segundo} são iguais.`)
-} */
 
+// // etapa 2 e 3
+// if(primeiro > segundo) {
+//     console.log(`O número ${primeiro} é o maior.`);
+
+// } else if(segundo > primeiro) {
+//     console.log(`O número ${segundo} é o maior.`);
+
+// } else {
+//     console.log(`Os numeros ${primeiro} e ${segundo} são iguais.`)
+// } 
+
+// TESTE DE MESA
 // 100 > 100 -> nao
 // 100 > 100 -> nao
 // 100 === 100 -> sim
 
-let quantidade = 5;
-let valorCompra;
+// let quantidade = 5;
+// let valorCompra;
 
-if(quantidade >= 12) {
-    valorCompra = quantidade * 0.25;
+// if(quantidade >= 12) {
+//     valorCompra = quantidade * 0.25;
 
-} 
-else {
-    valorCompra = quantidade * 0.30;
+// } 
+// else {
+//     valorCompra = quantidade * 0.30;
 
-}
+// }
 
-console.log(`o valor da compra é R$${valorCompra}`);
+// console.log(`o valor da compra é R$${valorCompra}`);
 
 
 /*
@@ -89,22 +90,22 @@ do usuário. Ex: “Nome: Pedro, 5 letras. Idade: 22 anos, nasceu em
 2000”.
 
 */
-/* 
+
 // etapa 1
-let nome = 'João';
-let idade = 27;
-let anoAtual = 2022;
+// let nome = 'João';
+// let idade = 27;
+// let anoAtual = 2022;
 
-// etapa 2
-let quantidadeLetras = nome.length // capturar o tamanho da string = quantidade de caracters/espaços utilizados para armazenar esse dado
-let anoNascimento = anoAtual - idade;
+// // etapa 2
+// let quantidadeLetras = nome.length // capturar o tamanho da string = quantidade de caracters/espaços utilizados para armazenar esse dado
+// let anoNascimento = anoAtual - idade;
 
-// etapa 3
-console.log(`Nome: ${nome}, ${quantidadeLetras} letras`);
-console.log(`Idade: ${idade}, nasceu em ${anoNascimento}`);
+// // etapa 3
+// console.log(`Nome: ${nome}, ${quantidadeLetras} letras`);
+// console.log(`Idade: ${idade}, nasceu em ${anoNascimento}`);
 
 
- */
+
 /*
 
 Crie um algoritmo que armazene um número inteiro positivo, 
@@ -115,52 +116,28 @@ b. “Número é impar!”, se o valor armazenado for ímpar;
 */
 
 // etapa 1
-/* let numero = 10;
-let resto = numero % 2; */
+// let numero = 10;
+// let resto = numero % 2; 
 
-// 0 === PAR
-// 1 === IMPAR
+// resto === 0 -> PAR
+// resto === 1 -> IMPAR
 
 
-// 0 === !FALSE -> true -> PAR
-// 1 === !TRUE -> false -> IMPAR
-/* 
-if(!resto){
-    window.alert(`O número ${numero} é PAR!`);
+// 0 -> FALSE -> PAR
+// 1 -> TRUE  -> IMPAR
+ 
+// if(resto){
+//     // executa aqui se o resto === 1 -> true
+//     window.alert(`O número ${numero} é IMPAR!`);
     
-} else {
-   window.alert(`O número ${numero} é IMPAR!`);
-} */
+// } else {
+
+//     // executa aqui se o resto === 0
+//    window.alert(`O número ${numero} é PAR!`);
+// } 
 
 
-/*
-
-10. Escreva um algoritmo que armazene o ano atual e o ano de
-nascimento de uma pessoa. 
-
-se ela poderá ou não votar este ano
-
-Escrever uma mensagem no console
-que diga se ela poderá ou não votar este ano (não é necessário
-considerar o mês em que a pessoa nasceu).
-
-*/
-
-// pode votar?
-
-// sim
-    // opcional ou obrigatório?
-
-    // qualquer ( idade < 18) && (idade > 16) = 16 até 17 - opcional
-
-    // 18 até 65 - obrigatório
-
-    // maior que 65 - opcional
-
-
-// nao
-
-
+// LÓGICOS - || (ou), && (e), ! (nao)
 
 /*
 
@@ -194,7 +171,36 @@ considerar o mês em que a pessoa nasceu).
 
 */
 
-// LÓGICOS - || (ou), && (e), ! (nao)
+
+
+
+/*
+
+10. Escreva um algoritmo que armazene o ano atual e o ano de
+nascimento de uma pessoa. 
+
+se ela poderá ou não votar este ano
+
+Escrever uma mensagem no console
+que diga se ela poderá ou não votar este ano (não é necessário
+considerar o mês em que a pessoa nasceu).
+
+*/
+
+// pode votar?
+
+// sim
+    // opcional ou obrigatório?
+
+    // qualquer ( idade >= 18) && (idade <= 65 ) = 18 até 65 anos - obrigatório
+
+    // a partir de 16 até 17 - opcional
+
+    // maior que 65 - opcional
+
+
+// nao -  é menor de idade
+
 
 // etapa 1 
 
