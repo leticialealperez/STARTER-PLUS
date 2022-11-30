@@ -125,43 +125,43 @@ pro JS os valores '', undefined, null ou 0 -> false
 
 */
 
-let totalEleitores = Number(window.prompt('Informe o total de eleitores: '));
+// let totalEleitores = Number(window.prompt('Informe o total de eleitores: '));
 
-if(!totalEleitores) {
-  document.write('Total de eleitores não é válido! Tente novamente');
+// if(!totalEleitores) {
+//   document.write('Total de eleitores não é válido! Tente novamente');
 
-} else {
+// } else {
   
-  let votosBrancos = Number(window.prompt('Informe o total de votos brancos: '));
+//   let votosBrancos = Number(window.prompt('Informe o total de votos brancos: '));
 
-  if(!votosBrancos) {
-    document.write('Total de votos brancos não é válido! Tente novamente');
+//   if(!votosBrancos) {
+//     document.write('Total de votos brancos não é válido! Tente novamente');
   
-  } else {
-    let totalNulos = Number(window.prompt('Informe o total de votos nulos: '));
+//   } else {
+//     let totalNulos = Number(window.prompt('Informe o total de votos nulos: '));
 
-    if(!totalNulos) {
-      document.write('Total de votos nulos não é válido! Tente novamente');
+//     if(!totalNulos) {
+//       document.write('Total de votos nulos não é válido! Tente novamente');
     
-    } else {
-      let totalValidos = Number(window.prompt('Informe o total de votos válidos: '));
+//     } else {
+//       let totalValidos = Number(window.prompt('Informe o total de votos válidos: '));
 
-      if(!totalValidos) {
-        document.write('Total de votos validos não é válido! Tente novamente');
-      } else {
-        let percentualBrancos = (votosBrancos * 100) / totalEleitores;
-        let percentualNulos = (totalNulos * 100) / totalEleitores;
-        let percentualValidos = (totalValidos * 100) / totalEleitores;
+//       if(!totalValidos) {
+//         document.write('Total de votos validos não é válido! Tente novamente');
+//       } else {
+//         let percentualBrancos = (votosBrancos * 100) / totalEleitores;
+//         let percentualNulos = (totalNulos * 100) / totalEleitores;
+//         let percentualValidos = (totalValidos * 100) / totalEleitores;
 
-        document.write(`<p>Total de eleitores: ${totalEleitores.toFixed(2)}</p>`);
-        document.write(`<p>Percentual de brancos: ${percentualBrancos.toFixed(2)}%</p>`);
-        document.write(`<p>Percentual de nulos: ${percentualNulos.toFixed(2)}%</p>`);
-        document.write(`<p>Percentual de validos: ${percentualValidos.toFixed(2)}%</p>`);
+//         document.write(`<p>Total de eleitores: ${totalEleitores.toFixed(2)}</p>`);
+//         document.write(`<p>Percentual de brancos: ${percentualBrancos.toFixed(2)}%</p>`);
+//         document.write(`<p>Percentual de nulos: ${percentualNulos.toFixed(2)}%</p>`);
+//         document.write(`<p>Percentual de validos: ${percentualValidos.toFixed(2)}%</p>`);
 
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
 
 
 
@@ -178,6 +178,27 @@ if(!totalEleitores) {
   o custo final ao consumidor.
 
 */
+
+let custoFabrica = Number(window.prompt('Informe o custo de fábrica do veículo: ').replace('.', '').replace(',', '.'));
+
+// ''     -> 0 -> !false -> true
+// null   -> 0 -> false
+// 'zxxd' -> 0 -> false
+
+if(!custoFabrica) {
+
+  document.write("Valor inválido");
+
+} else {
+
+  let percentualAcrescimo = 28 + 45;
+  let valorAcrescimo = (custoFabrica * percentualAcrescimo) / 100;
+  let custoFinal = custoFabrica + valorAcrescimo;
+
+  document.write(`<p>Custo Fábrica: ${custoFabrica}</p>`);
+  document.write(`<p>Custo Final: ${custoFinal}</p>`);
+
+}
 
 
 // LISTA 1 - EXERCICIO 4
