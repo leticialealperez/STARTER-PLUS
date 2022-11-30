@@ -36,10 +36,67 @@
 /*
 
   Escreva um algoritmo que solicite 2 números e uma operação
-  matemática. O algoritmo deve realizar o cálculo com os 2 números
+  matemática. 
+  
+  operando (-) operador
+  
+  O algoritmo deve realizar o cálculo com os 2 números
   digitados conforme a operação informada.
 
 */
+// '+', '-', '/', '*', '%', '**'
+
+let numero1 =Number(prompt("Digite o primeiro numero"));
+let numero2 = Number(prompt("Digite o segundo numero"));
+let operacao = prompt("Digite a operacao a ser realizada: +, -, /, *, % ou **");
+
+/* if(operacao === '+') {
+  let soma = Number(numero1) + Number(numero2);
+  document.write(`A soma entre ${numero1} e ${numero2} é ${soma}`);
+
+} else if(operacao === '-'){
+  let subtracao = Number(numero1) - Number(numero2);
+  document.write(`A subtração entre ${numero1} e ${numero2} é ${subtracao}`);
+
+} else if() .... */
+
+// SWITCH CASE - se aplica quando a gente precisa validar dados string ou numero
+// comparar === casos que tenho ?
+
+switch(operacao) {
+  case '+': 
+    document.write(`Resultado é ${numero1 + numero2}`)
+  break
+
+  case '-':
+    document.write(`Resultado é ${numero1 - numero2}`)
+  break
+
+  case '/':
+    document.write(`Resultado é ${numero1 / numero2}`)
+  break
+
+  case '*':
+    document.write(`Resultado é ${numero1 * numero2}`)
+  break
+
+  case '%':
+    document.write(`Resultado é ${numero1 % numero2}`)
+  break
+
+  case '**':
+    document.write(`Resultado é ${numero1 ** numero2}`)
+  break
+
+  default:
+    document.write(`Operador inválido!`)
+  break
+
+}
+
+
+
+
 
 
 // LISTA 3 - EXERCICIO 3

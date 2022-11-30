@@ -179,7 +179,11 @@ pro JS os valores '', undefined, null ou 0 -> false
 
 */
 
-let custoFabrica = Number(window.prompt('Informe o custo de fábrica do veículo: ').replace('.', '').replace(',', '.'));
+let custoFabrica = window.prompt('Informe o custo de fábrica do veículo: ');
+
+if(custoFabrica !== null) {
+  custoFabrica = Number(custoFabrica.replace('.', '').replace(',', '.'));
+}
 
 // ''     -> 0 -> !false -> true
 // null   -> 0 -> false
