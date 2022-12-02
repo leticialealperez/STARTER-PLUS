@@ -1,15 +1,3 @@
-// EXEMPLO CONDICIONAL SIMPLES
-// if(numeroAtual > 0) {
-//     // SIM - aqui só executa se a resposta para a condição ou comparação for SIM/true
-//     // é positivo
-
-// } 
-
-// else {
-//     // NAO - aqui só executa se a resposta para a condição ou comparação for NAO/false
-//     // é negativo
-// } 
-
 
 // LISTA 3 - EXERCICIO 1
 

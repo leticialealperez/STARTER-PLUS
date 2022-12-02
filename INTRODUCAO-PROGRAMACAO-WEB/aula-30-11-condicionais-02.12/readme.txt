@@ -63,6 +63,19 @@ let resto = 10 % 2; =>  0
 
 
 
+-- ESTRUTURAS DE repetição
+   -- REPETIÇÕES POR NUMEROS DEFINIDOS
+      - FOR
+
+   -- REPETIÇÕES POR NUMERO INDEFINIDOS
+      - WHILE
+      - DO WHILE
+
+
+
+
+
+
 
 
 
