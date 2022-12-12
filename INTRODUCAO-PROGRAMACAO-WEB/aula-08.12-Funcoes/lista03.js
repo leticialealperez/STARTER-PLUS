@@ -218,3 +218,4 @@ function teste() {
 
     document.write(`${numero.toFixed(2)}`)
 }
+
