@@ -52,13 +52,25 @@ function exercicio2() {
     document.write(`<h2>Lista Masculino</h2>`)
     for(let indice = 0; indice < listaSalarioM.length; indice++) {
         document.write(`<p>${indice + 1}ª posicao da lista M => ${listaSalarioM[indice]}</p>`)
+
+        salarioTotalM += listaSalarioM[indice]
     } 
+    document.write(`<p>Total de salário Masculino => ${salarioTotalM.toFixed(2)}</p>`)
 
-
+    // somar todos os valores da listaSalarioM e mostrar o total
     document.write(`<h2>Lista Feminino</h2>`)
     for(let indice = 0; indice < listaSalarioF.length; indice++) {
         document.write(`<p>${indice + 1}ª posicao da lista F => ${listaSalarioF[indice]}</p>`)
+
+        // indice => 0
+        // indice => 1
+        // indice => 2
+
+        salarioTotalF += listaSalarioF[indice]
     } 
+    document.write(`<p>Total de salário Feminino => ${salarioTotalF.toFixed(2)}</p>`)
+
+    // somar todos os valores da listaSalarioF e mostrar o total
 
     
 
