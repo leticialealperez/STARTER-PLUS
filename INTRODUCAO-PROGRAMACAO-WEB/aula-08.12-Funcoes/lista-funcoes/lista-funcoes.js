@@ -65,7 +65,7 @@ function exercicio2() {
 
     numero = verificaInputNumerico(numero)
 
-    let impar = verificaPar(numero)
+    let impar = verificaImpar(numero)
 
     if(impar) {
         document.write(`É impar!`)
@@ -74,10 +74,94 @@ function exercicio2() {
     }
 }
 
-function verificaPar(numero) {
+function verificaImpar(numero) {
     if(numero % 2 !== 0) {
         return true
     } else {
         return false
     }
+}
+
+/*
+
+Crie uma função que recebe por parâmetro um valor inteiro e
+positivo e retorne verdadeiro se o número for primo ou falso se não
+for.
+
+*/
+function exercicio3() {
+    let numero = prompt("Digite um número") 
+    numero = verificaInteiroPositivo(numero)
+
+    if(numero === 0) {
+        alert("Operação cancelada por inconsistencia nos dados informados")
+        return
+    }
+
+    // verificar se o numero informado é primo
+    const primo = verificaPrimo(numero) // void => vazio => sem retorno
+
+    if(primo) {
+        document.write(`O numero ${numero} é primo!`)
+    } else {
+        document.write(`O numero ${numero} não é primo!`)
+    }
+
+}
+
+function verificaInteiroPositivo(numeroString) {
+    console.log(numeroString)
+    const numeroInteiro = parseInt(numeroString) // float -> decimais  int -> parte inteira
+    // 'abc' ou '' -> NaN -> false
+
+    // verificando se foi digitado um valor válido !== '' ou 'abc' ou clique no cancelar
+    if(!numeroInteiro) {
+        alert("Valor inválido")
+        return 0
+    }
+
+    // verificar se é positivo
+    if(numeroInteiro <= 0) {
+        alert("Precisar ser inteiro e positivo.")
+        return 0
+    }
+
+
+    return numeroInteiro
+}
+
+function verificaPrimo(valor) {
+
+    // 9 
+    // 1 é divisor de todo e qualquer numero
+    // o proprio valor é divisor dele mesmo 
+    // só pode ser divisivel por 1 e por ele mesmo -> ter 2 divisores
+
+
+    // 2, 3, 4, 5, 6, 7, 8
+    if(valor === 0 || valor === 1) {
+        return false
+    }
+
+    if(valor === 2) {
+        return true
+    }
+
+    let divisores = 2;
+
+    for(let contador = 2; contador < valor; contador++) {
+
+        if(valor % contador === 0) {
+            divisores++
+        }
+        
+    }
+
+    if(divisores > 2) {
+        return false
+    } 
+
+
+    return true
+
 }
