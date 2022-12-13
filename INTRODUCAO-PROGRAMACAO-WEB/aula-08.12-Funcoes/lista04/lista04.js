@@ -16,7 +16,10 @@ funcionário.
 function exercicio2() {
 
     // lista de salario dos funcionarios do sexo Masculino
+    let listaSalarioM = []
     // lista de salario dos funcionarios do sexo Feminino
+    let listaSalarioF = []
+
     let salarioTotalM = 0;
     let salarioTotalF = 0;
     let confirma = true;
@@ -28,36 +31,36 @@ function exercicio2() {
         let sexo = prompt("Informe o sexo do funcionário (M - masculino, F - feminino): ").toUpperCase()
 
         if(sexo === 'M') {
-            salarioTotalM += salario
+            listaSalarioM.push(salario)
         }
 
         if(sexo === 'F') {
-            salarioTotalF += salario
+            listaSalarioF.push(salario)
         }
 
         confirma = confirm('Deseja continuar cadastrando?') // ok => true // cancel => false
 
     }while(confirma)
 
-    document.write(`Salário total do sexo Masculino = R$${salarioTotalM.toFixed(2)}<br>`)
-    document.write(`Salário total do sexo Feminino = R$${salarioTotalF.toFixed(2)}`)
+    // array => indice e valor
+    // listaM => [1000]
 
-    // while(confirma) {
-    //     let salario = prompt("Informe o salário do funcionário: ")
-    //     salario = verificaDecimalPositivo(salario)
+    // mostrar no html o seguimte formato
+    // 1ª posição do array = 1000,00
+    // 2ª posição do array = 2000,00
+    // 3ª posição do array = 2000,00
+    document.write(`<h2>Lista Masculino</h2>`)
+    for(let indice = 0; indice < listaSalarioM.length; indice++) {
+        document.write(`<p>${indice + 1}ª posicao da lista M => ${listaSalarioM[indice]}</p>`)
+    } 
 
-    //     let sexo = prompt("Informe o sexo do funcionário (M - masculino, F - feminino): ")
 
-    //     if(sexo === 'M') {
-    //         salarioTotalM += salario
-    //     }
+    document.write(`<h2>Lista Feminino</h2>`)
+    for(let indice = 0; indice < listaSalarioF.length; indice++) {
+        document.write(`<p>${indice + 1}ª posicao da lista F => ${listaSalarioF[indice]}</p>`)
+    } 
 
-    //     if(sexo === 'F') {
-    //         salarioTotalF += salario
-    //     }
-
-    //     confirma = confirm('Deseja continuar cadastrando?') // ok => true // cancel => false
-    // }
+    
 
 
     // alert => apenas mostra uma mensagem com o botao ok para descongelar a tela
