@@ -142,95 +142,95 @@ Exemplo: Pedro, 24, [JavaScript, TypeScript, React]. Se mandar chamar a função
 
 
 
-const pessoas = [
-    // [0]
-    {
-        nome: 'Roger Medeiros',
-        sexo: 'M',
-        salario: 3250,
-    },
+// const pessoas = [
+//     // [0]
+//     {
+//         nome: 'Roger Medeiros',
+//         sexo: 'M',
+//         salario: 3250,
+//     },
 
-    // [1]
-    {
-        nome: 'Carolina Silva',
-        sexo: 'F',
-        salario: 1200,
-    },
+//     // [1]
+//     {
+//         nome: 'Carolina Silva',
+//         sexo: 'F',
+//         salario: 1200,
+//     },
 
-    // [2]
-    {
-        nome: 'Cristina Avila',
-        sexo: 'F',
-        salario: 8100,
-    },
+//     // [2]
+//     {
+//         nome: 'Cristina Avila',
+//         sexo: 'F',
+//         salario: 8100,
+//     },
 
-    // [3]
-    {
-        nome: 'Gustavo Hoffman',
-        sexo: 'M',
-        salario: 5200.35,
-    },
+//     // [3]
+//     {
+//         nome: 'Gustavo Hoffman',
+//         sexo: 'M',
+//         salario: 5200.35,
+//     },
 
-    // [4]
-    {
-        nome: 'Eva Trindade',
-        sexo: 'F',
-        salario: 2501,
-    },
+//     // [4]
+//     {
+//         nome: 'Eva Trindade',
+//         sexo: 'F',
+//         salario: 2501,
+//     },
 
-    // [5]
-    {
-        nome: 'Andre Mathias',
-        sexo: 'M',
-        salario: 1750,
-    },
+//     // [5]
+//     {
+//         nome: 'Andre Mathias',
+//         sexo: 'M',
+//         salario: 1750,
+//     },
 
-    // [6]
-    {
-        nome: 'Joice Castro da Silva',
-        sexo: 'F',
-        salario: 3350.25,
-    },
-];
+//     // [6]
+//     {
+//         nome: 'Joice Castro da Silva',
+//         sexo: 'F',
+//         salario: 3350.25,
+//     },
+// ];
 
-// 1 - tamanho total da lista? 
-console.log(`A quantidade total de pessoas é ${pessoas.length}`)
+// // 1 - tamanho total da lista? 
+// console.log(`A quantidade total de pessoas é ${pessoas.length}`)
 
-// 2 - filtrar apenas as pessoas do sexo Feminino e dizer qual o tamanho total da lista retornada pelo filter
-const listaF = pessoas.filter((pessoa) => pessoa.sexo === 'F')
-console.log(`A quantidade total de pessoas do sexo Feminino é ${listaF.length}`)
+// // 2 - filtrar apenas as pessoas do sexo Feminino e dizer qual o tamanho total da lista retornada pelo filter
+// const listaF = pessoas.filter((pessoa) => pessoa.sexo === 'F')
+// console.log(`A quantidade total de pessoas do sexo Feminino é ${listaF.length}`)
 
 
-// 3 - Imprima no console a soma do salário de todas as pessoas.
-let soma = 0;
+// // 3 - Imprima no console a soma do salário de todas as pessoas.
+// let soma = 0;
 
-pessoas.forEach((pessoa) => {
-    soma += pessoa.salario
-})
+// pessoas.forEach((pessoa) => {
+//     soma += pessoa.salario
+// })
 
 // REDUCE - retorna apenas 1 dado resultado do processamento feito da lista
-const somaReduce = pessoas.reduce( (soma, pessoa) => soma += pessoa.salario, 0)
+// const somaReduce = pessoas.reduce( (soma, pessoa) => soma += pessoa.salario, 0)
 
-console.log(`A soma de todos os salários é ${somaReduce}`)
+// console.log(`A soma de todos os salários é ${somaReduce}`)
 
 
 // 4 - Imprima no console a soma do salario de todos as pessoas do sexo Masculino
-const somaM = pessoas.reduce( (soma, pessoa) => {
-    if(pessoa.sexo === 'M') {
-        return soma += pessoa.salario
-    }
+// const somaM = pessoas.reduce( (soma, pessoa) => {
+//     if(pessoa.sexo === 'M') {
+//         return soma += pessoa.salario
+//     }
 
-    // mantem o valor que tinha em soma
-    return soma
-}, 0)
+//     // mantem o valor que tinha em soma
+//     return soma
+// }, 0)
 
-console.log(`A soma de todos os salários de pessoas do sexo Masculino é ${somaM}`)
+// console.log(`A soma de todos os salários de pessoas do sexo Masculino é ${somaM}`)
 
 
 // 5 - Utilize a função Some, para descobrir se existe algum salário superior a R$ 7.000, imprima verdadeiro no console caso exista, caso contrário falso.
-const existe = pessoas.some((pessoa) => pessoa.salario > 7000)
+// const existe = pessoas.some((pessoa) => pessoa.salario > 7000)
 
-console.log(existe ? 'verdadeiro' : 'falso')
+// console.log(existe ? 'verdadeiro' : 'falso')
 // if(existe){
 //     console.log('verdadeiro')
 // } else {
@@ -241,26 +241,27 @@ console.log(existe ? 'verdadeiro' : 'falso')
 
 
 // 6 - Utilize a função findIndex, para descobrir a posição da pessoa de nome 'Eva Trindade'.
-const indiceEncontrado = pessoas.findIndex((pessoa) => pessoa.nome === 'Eva Trindade');
-console.log(indiceEncontrado === -1 ? 'Não encontrado' : `O indice na lista da pessoa chamada Eva Trindade é ${indiceEncontrado}`)
+// const indiceEncontrado = pessoas.findIndex((pessoa) => pessoa.nome === 'Eva Trindade');
+// console.log(indiceEncontrado === -1 ? 'Não encontrado' : `O indice na lista da pessoa chamada Eva Trindade é ${indiceEncontrado}`)
 
 
 // 7 - Utilize a função filter, para filtrar todas pessoas que o nome possua o sobrenome "Silva".
-const silvas = pessoas.filter((pessoa) => pessoa.nome.includes('Silva'))
-console.log(silvas)
+// const silvas = pessoas.filter((pessoa) => pessoa.nome.includes('Silva'))
+// console.log(silvas)
 
-console.log('Joao da Silva Souza'.includes('Souza')) // true
+// console.log('Joao da Silva Souza'.includes('Souza')) // true
 
 
 // 8 - imprima os nomes utilizando o MAP
-const nomes = pessoas.map((pessoa) => {
-    return {
-        nome: pessoa.nome.toUpperCase(),
-        salario: pessoa.salario * 2
-    }
-})
-console.log(nomes)
+// const nomes = pessoas.map((pessoa) => {
+//     return {
+//         nome: pessoa.nome.toUpperCase(),
+//         salario: pessoa.salario * 2
+//     }
+// })
+// console.log(nomes)
 
+let listaContatos = [];
 // CRUD - CONTATOS
 // nome, telefone
 
@@ -269,14 +270,103 @@ console.log(nomes)
 
 // C -> CREATE -> CRIAR
 // clicar num botão com nome "criar novo contato" -> executar uma função
+function criarContato() {
+    // capturar os dados necessários do usuário
+    const nomePrompt = prompt("Digite o nome do contato:");
+    const telefonePrompt = prompt("Digite o telefone do contato")
+
+    // se o usuario tentar cadastrar um contato já existente
+    const existe = listaContatos.some((valor) => valor.phone === telefonePrompt)
+
+    // verificar qual o valor retornado pela busca na lista
+    // se for true - não cadastramos e mostramos um alerta ao usuario dizendo que já existe
+    if(existe) {
+        alert("Este contato já existe. Verifique sua lista de contatos!")
+        return
+    }
+
+    // se não existir (false) - criamos o objeto do novoContato e adicionamos na lista de contatos
+    const novoContato = {
+        name: nomePrompt,
+        phone: telefonePrompt
+    }
+
+    listaContatos.push(novoContato)
+
+}
 
 
 // R -> READ -> LER/LISTAR
 // clicar num botão "listar contatos" e percorrer a lista de contatos mostrando no html nome e telefone
+function listarContatos() {
+    let espacoListaHTML = document.getElementById('lista-contatos');
+    espacoListaHTML.innerHTML = '';
+
+    // innerText - só adiciona Textos
+    // espacoListaHTML.innerText = '<p>Teste conteudo</p>'
+
+    for(const contato of listaContatos) {
+        // innerHTML - adicionar elementos HTML
+        espacoListaHTML.innerHTML += `<p>${contato.name} - ${contato.phone}</p>`
+    }
+}
 
 
 // U -> UPDATE -> ATUALIZAR
+function atualizarContato() {
+
+    //capturar o que o usuário quer atualizar, qual o registro
+    const nomePrompt = prompt("Informe o nome do contato a ser editado: ")
+
+    // percorrer a lista e buscar qual o contato cujo nome é igual ao nome informado pelo usuario
+    const indiceEncontrado = listaContatos.findIndex((valor) => valor.name === nomePrompt)
+
+    // -1 é o valor retornado pelo findIndex quando nenhum registro atende à condição
+    if(indiceEncontrado === -1) {
+        alert("Nenhum contato encontrado com este nome!");
+        return
+    }
+
+    // aqui pra baixo vai executar somente se encontrar um indice que atenda a condição do findIndex
+    const novoNome = prompt("Digite o novo nome para o contato: ")
+    const novoTelefone = prompt("Digite o novo telefone para o contato: ")
+
+    // verifica se existe um telefone igual ao que o usuario digitou
+    const existe = listaContatos.some((valor) => valor.phone === novoTelefone)
+
+    // se encontrar mostra o erro e não executa mais nada (return)
+    if(existe) {
+        alert("Este contato já existe. Verifique sua lista de contatos.")
+        return
+    }
+
+
+    // o que há em cada posição da lista?
+    listaContatos[indiceEncontrado].name = novoNome;
+    listaContatos[indiceEncontrado].phone = novoTelefone;
+
+    // listar novamente os registros no HTML
+    listarContatos()
+
+}
+
+
 // D -> DELETE -> DELETAR
+function deletarContato() {
+    //capturar o que o usuário quer excluir, qual o registro
+    const telefonePrompt = prompt("Informe o telefone do contato a ser excluído: ")
+
+    const novaLista = listaContatos.filter((valor) => valor.phone !== telefonePrompt)
+
+    if(novaLista.length === listaContatos.length) {
+        alert("Este telefone não pode ser encontrado!")
+        return
+    }
+
+    listaContatos = novaLista
+
+    listarContatos()
+}
 
 
 
