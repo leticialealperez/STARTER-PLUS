@@ -2,8 +2,10 @@
 // // getElementById()
 
 // const inputEmail = window.document.getElementById('email') 
-// // elemento = conjunto de tag + atributos + conteúdo
-// // <input type="email" name="email" id="email" placeholder="E-mail">
+// O que será armazenado na variavel inputEmail? 
+// Um elemento HTML
+// O que é um elemento HTML? Elemento é o conjunto de tag + atributos + conteúdo
+// EX:  <input type="email" name="email" id="email" placeholder="E-mail"> 
 
 // // <input>
 
