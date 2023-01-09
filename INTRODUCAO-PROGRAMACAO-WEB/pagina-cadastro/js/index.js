@@ -11,15 +11,18 @@
 
 // // quando o botão é do tipo button -> onclick
 // // quando o botão é do tipo submit -> onsubmit
+
+
+// variavel global que armazerará todos os usuários cadastrados no sistema
 let listaUsuarios = []
 
 
+// captura do elemento de formulário do documento html que está rodando esse arquivo JS
 const formularioCadastroHTML = window.document.getElementById('formulario-cadastro')
-
 // console.log(formularioCadastroHTML)
 
 
-// observador - 
+// observador - dispara a função passada após a virgula sempre que ocorrer o "envio" (submit) do formulário
 formularioCadastroHTML.addEventListener('submit', (ev) => {
     // previne o comportamento padrão do submit - remove o refresh
     ev.preventDefault()
