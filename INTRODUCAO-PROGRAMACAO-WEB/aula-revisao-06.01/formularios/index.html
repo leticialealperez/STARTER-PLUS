@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIOS</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form>
+        <!-- text -->
+        <label for="nome">Nome Completo:</label>
+        <input id="nome" type="text" placeholder="Ex: João da Silva"> <br> <br>
+
+        <!-- number -->
+        <label for="idade">Idade:</label>
+        <input id="idade" type="number"> <br> <br>
+
+        <!-- password -->
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" required> <br> <br>
+
+        <!-- email -->
+        <input type="email" required> <br> <br>
+
+
+        <!-- radio button -->
+        <label for="opcao">Selecione um Número:</label>
+        <input type="radio" name="opcao" id="opcao1">
+        <label for="opcao1">1</label>
+        
+        
+        <input type="radio" name="opcao" id="opcao2">
+        <label for="opcao2">2</label>
+
+        <input type="radio" name="opcao" id="opcao3">
+        <label for="opcao3">3</label> <br> <br>
+
+        <!-- checkbox -->
+        <input type="checkbox" name="opcao2">
+        <input type="checkbox" name="opcao2">
+        <input type="checkbox" name="opcao2"> <br> <br>
+
+
+        <!-- date -->
+        <input type="date"> <br> <br>
+
+        <!-- color -->
+        <input type="color" value="#777aaa"> <br> <br>
+
+        <!-- file -->
+        <input type="file"> <br> <br>
+
+        <select>
+            <option selected disabled>-Selecione-</option>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+            <option>Opção 3</option>
+            <option>Opção 4</option>
+        </select>
+        <br> <br>
+
+        <!-- submit - somente dentro de formularios -->
+        <input type="submit" value="Enviar formulário">
+
+        <!-- reset -->
+        <input type="reset" value="Limpar Campos">
+
+    </form>
+</body>
+</html>
