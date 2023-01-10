@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário Cadastro</title>
+</head>
+<body>
+    
+    <form id="formulario-cadastro">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" id="nome"
+                required>
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" required>
+            </div>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado" required>
+                <option value="" disabled selected>-Selecione-</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceara</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+
+            <!-- RADIO BUTTONS -->
+            <label for="cargo">Natureza do Cargo: </label>
+
+            <div>
+                <input type="radio" name="cargo" value="Gerência" id="opcao1" checked>
+                <label for="opcao1">Gerência</label>
+                
+                <input type="radio" name="cargo" value="Financeiro" id="opcao2">
+                <label for="opcao2">Financeiro</label>
+                
+                <input type="radio" name="cargo" value="RH" id="opcao3">
+                <label for="opcao3">RH</label>
+                
+                <input type="radio" name="cargo" value="Administrativo" id="opcao4">
+                <label for="opcao4">Administrativo</label>
+                
+                <input type="radio" name="cargo" value="Engenharia" id="opcao5">
+                <label for="opcao5">Engenharia</label>
+            </div>
+
+
+            <!-- CHECKBOXES -->
+            <label for="area-interesse">Área de Interesse: </label>
+
+            <div>
+                <input type="checkbox" name="area-interesse" value="Computação" id="area-1">
+                <label for="area-1">Computação</label>
+                
+                <input type="checkbox" name="area-interesse" value="Análises" id="area-2">
+                <label for="area-2">Análises</label>
+                
+                <input type="checkbox" name="area-interesse" value="História" id="area-3">
+                <label for="area-3">História</label>
+                
+                <input type="checkbox" name="area-interesse" value="Educação" id="area-4">
+                <label for="area-4">Educação</label>
+                
+                <input type="checkbox" name="area-interesse" value="Finanças" id="area-5">
+                <label for="area-5">Finanças</label>
+            </div>
+
+            <!-- TEXT AREA -->
+            <div>
+                <label for="descricao">Breve Descrição: </label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" minlength="0" maxlength="500"></textarea>
+            </div>
+
+        </fieldset>
+
+
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar Campos">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Cargo</th>
+                <th>Áreas de Interesse</th>
+                <th>Descrição</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="registros">
+            <!-- <tr>
+                <td>1</td>
+                <td>João da Silva</td>
+                <td>Rua teste, 21 - Cachoeirinha, RS</td>
+                <td>Gerência</td>
+                <td>Computação, História</td>
+                <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sint vitae commodi possimus, natus ipsam debitis. Natus maxime ab libero quo.
+                </td>
+                <td>
+                    <button>Apagar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>João da Silva</td>
+                <td>Rua teste, 21 - Cachoeirinha, RS</td>
+                <td>Gerência</td>
+                <td>Computação, História</td>
+                <td>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sint vitae commodi possimus, natus ipsam debitis.
+                    Natus maxime ab libero quo.
+                </td>
+                <td>
+                    <button>Apagar</button>
+                </td>
+            </tr> -->
+            
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
