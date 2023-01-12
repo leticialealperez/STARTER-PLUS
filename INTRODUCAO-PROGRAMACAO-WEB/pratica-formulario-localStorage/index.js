@@ -6,14 +6,10 @@
 
 // 3 - evento de "submit" sempre irá reestartar a página, é preciso prevenir o comportamento padrão com "preventDefault()" antes de toda a lógica
 
-const listaCadastros = buscarDadosDoLocalStorage('cadastros') // [{}, {}, {}]
+const listaCadastros = buscarDadosDoLocalStorage('cadastros')
 console.log(listaCadastros)
 
 const formularioHTML = document.getElementById('formulario-cadastro');
-
-const tbody = document.getElementById('registros')
-
-document.addEventListener('DOMContentLoaded', montarRegistrosNoHTML)
 
 
 // addEventListener
@@ -53,37 +49,18 @@ formularioHTML.addEventListener('submit', (evento) => {
         descricao: descricao,
     }
 
+
+    // VERIFICAR SE JÁ EXISTE UM USUARIO COM EMAIL IGUAL AO QUE FOI DIGITADO NO CAMPO INPUT
+
     listaCadastros.push(novoCadastro)
     guardarNoLocalStorage('cadastros', listaCadastros)
 
     // limpar os campos do formulario
     formularioHTML.reset()
 
-    montarRegistrosNoHTML()
 })
 
-function montarRegistrosNoHTML() {
-    tbody.innerHTML = ''
 
-    listaCadastros.forEach((valor, index) => {
-        tbody.innerHTML += `
-            <tr>
-                <td>${index + 1}</td>
-                <td>${valor.nome}</td>
-                <td>${valor.endereco} - ${valor.cidade}, ${valor.estado}</td>
-                <td>${valor.cargo}</td>
-                <td>${valor.areasInteresse.toString()}</td>
-                <td>
-                    ${valor.descricao}
-                </td>
-                <td>
-                    <button>Apagar</button>
-                </td>
-            </tr>
-        `
-    })
-
-}
 
 function guardarNoLocalStorage(chave, valor) {
     const valorJSON = JSON.stringify(valor)
@@ -102,7 +79,6 @@ function buscarDadosDoLocalStorage(chave) {
     } else {
         return []
     }
-
 }
 
 
