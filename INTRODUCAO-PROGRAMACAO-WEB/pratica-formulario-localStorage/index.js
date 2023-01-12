@@ -12,7 +12,16 @@ console.log(listaCadastros)
 const formularioHTML = document.getElementById('formulario-cadastro');
 
 
-// addEventListener
+document.addEventListener('DOMContentLoaded', () => {
+    const usuarioLogado = localStorage.getItem('usuarioLogado')
+
+    if(usuarioLogado) {
+        window.location.href = './cadastros.html'
+    }
+})
+
+
+// addEventListener - quando o submit acontecer executa a função passada
 formularioHTML.addEventListener('submit', (evento) => {
     evento.preventDefault()
 
@@ -82,35 +91,6 @@ function buscarDadosDoLocalStorage(chave) {
 }
 
 
-// window.localStorage - URL
 
-// KEY - nome do registro no localStorage
-// VALUE - valor do registro, ou o que será armazenado
-
-// SET - criar/setar/atualizar - .setItem()
-// localStorage.setItem('corFavorita', 'preto')
-
-
-// GET - buscar/trazer - .getItem()
-// localStorage.getItem('corFavorita')
-
-
-
-// REMOVE - remover/excluir - .removeItem()
-// localStorage.removeItem('corFavorita')
-
-
-// CLEAR - limpar/remoever todos - .clear()
-// localStorage.clear()
-
-
-
-// JSON - estrutura de dados padrão de comunicação de aplicações WEB
-
-// JSON para OBJ
-// JSON.parse(objJSON) -> transforma um JSON em objeto ou array novamente
-
-// OBJ para JSON
-// JSON.stringify(objArray) -> transforma uma variavel em um JSON (string)
 
 
