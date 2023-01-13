@@ -15,8 +15,8 @@ const formularioHTML = document.getElementById('formulario-cadastro');
 document.addEventListener('DOMContentLoaded', () => {
     const usuarioLogado = localStorage.getItem('usuarioLogado')
 
-    if(usuarioLogado) {
-        window.location.href = './cadastros.html'
+    if(!usuarioLogado) {
+        window.location.href = './login.html'
     }
 })
 
