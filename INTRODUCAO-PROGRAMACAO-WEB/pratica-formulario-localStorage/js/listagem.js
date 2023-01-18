@@ -88,14 +88,38 @@ function montarRegistrosNoHTML() {
 }
 
 function apagarRegistro(indice) {
-    // remover da lista de registros
+    // remover da lista de registros - JS
+    // SPLICE - retorna os items excluidos e modifica a lista original
+    listaCadastros.splice(indice, 1)
+    console.log(listaCadastros)
 
-    // atualizar o localstorage
 
-    // remover do html
-    let trRemover = document.getElementById(indice)
-    trRemover.remove()
+    // atualizar o localstorage - 
+    guardarNoLocalStorage('cadastros', listaCadastros)
 
-    
+
+    // remover a linha do HTML
+    // posicao === id
+    const tr = document.getElementById(indice)
+    tr.remove()
+
+    window.location.reload()
+
 }
+
+function guardarNoLocalStorage(chave, valor) {
+    const valorJSON = JSON.stringify(valor)
+
+    localStorage.setItem(chave, valorJSON)
+
+}
+
+
+// function apagarRecado(indice) {
+//     const trRemove = document.getElementById(indice);
+//     trRemove.remove();
+//     usuarioLogado.recados.splice(indice, 1);
+//     guardarDadosLocalStorage('usuarioLogado', usuarioLogado);
+// }
+
 
