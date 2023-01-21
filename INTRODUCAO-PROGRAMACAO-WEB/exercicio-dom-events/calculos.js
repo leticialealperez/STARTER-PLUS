@@ -101,6 +101,12 @@ function calcularTotalFinal() {
 const botaoCalcular = document.getElementById('btn_calcular')
 botaoCalcular.addEventListener('click', calcularTotalFinal)
 
+const botaoZerar = document.getElementById('btn_zerar')
+botaoZerar.addEventListener('click', () => {
+    localStorage.clear()
+    window.location.reload()
+})
+
 
 // CAPTURA OS ELEMENTOS PARA OBSERVAR QUANDO OS INPUTS SÃO DESFOCADOS
 const valorBase = document.getElementById('valor_base')
