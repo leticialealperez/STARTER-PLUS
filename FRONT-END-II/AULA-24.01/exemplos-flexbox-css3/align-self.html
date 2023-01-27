@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - Order</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            margin-bottom: 10px;
+            border: 1px solid #000;
+            display: flex;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .item {
+            background-color: rgb(22, 142, 212);
+            color: rgb(253, 253, 253);
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .star {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="flex-container align-container">
+        <div class="item">tttt</div>
+        <div class="item">874040</div>
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis. </div>
+        <div class="item center">Item 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item star">tttt</div>
+        <div class="item end">874040</div>
+        <div class="item stretch">Mussum Ipsum, cacilds vidis litro abertis. </div>
+        <div class="item baseline">Item 4</div>
+    </section>
+
+</body>
+</html>

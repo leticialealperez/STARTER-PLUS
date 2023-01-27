@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - Align content</title>
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: rgb(255, 0, 221);
+            padding:0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+    <p>Flex start</p>
+    <div class="container flex-start">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+    <p>Flex end</p>
+    <div class="container flex-end">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container space-around">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+    <p>Space between</p>
+    <div class="container space-between">
+        <div class="item">Mussum Ipsum, cacilds vidis</div>
+        <div class="item">litro abertis</div>
+        <div class="item">Nullam a nisl ut ante blandit hendrerit.</div>
+        <div class="item">Mauris nec dolor in eros commodo tempor</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+        <div class="item">Aenean sit amet nisi.</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - Order</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            display: flex;
+        }
+
+        .item {
+            flex: 1;
+            background-color: rgb(229, 255, 0);
+            color: rgb(117, 22, 22);
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+            order: 0;
+        }
+
+        .ol {
+            order: 1;
+        }
+
+        .o2 {
+            order: 2;
+        }
+
+        .o3 {
+            order: 3;
+        }
+
+        .direction {
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>Order: 0</p>
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>  
+    </div>
+
+    <p>Order: different</p>
+    <div class="flex-container">
+        <div class="item ol">Item 1e</div>
+        <div class="item o2">Item 2g</div>
+        <div class="item o3">Item 3j</div>
+        <div class="item ol">Item 4t</div>  
+    </div>
+
+    <h1>Column</h1>
+    <p>Order: 0</p>
+    <div class="flex-container direction">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>  
+    </div>
+
+    <p>Order: different</p>
+    <div class="flex-container direction">
+        <div class="item ol">Item 1e</div>
+        <div class="item o2">Item 2g</div>
+        <div class="item o3">Item 3j</div>
+        <div class="item ol">Item 4t</div>  
+    </div>
+
+</body>
+</html>
