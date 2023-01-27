@@ -1,0 +1,28 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.amarelo {
+    background-color: yellow;
+    order: 1;
+}
+
+.azul {
+    background-color: blue;
+    order: 2;
+}
+
+/* .verde {
+    background-color: green;
+    order: 1;
+} */
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

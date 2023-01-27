@@ -1,0 +1,32 @@
+section {
+    height: 100vh;
+}
+div {
+    height: 200px;
+    width: 200px;
+    flex-direction: row;
+}
+
+.circulo {
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.quadrado{
+    background-color: blue;
+}
+
+article {
+    height: 50%;
+    display: flex;
+}
+
+.laranja {
+    justify-content: flex-end;
+}
+
+.azul{
+    justify-content: space-between;
+    align-items: flex-end;
+}
