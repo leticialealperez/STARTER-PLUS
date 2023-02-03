@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+main {
+    background-image: url(../assets/bg.jpg);
+    background-position: center;
+}
+
+.card-login {
+    width: 350px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card-login h1 {
+    font-size: 3.6rem;
+    margin-bottom: 25px;
+}
+
+.card-login form {
+    font-size: 1.8rem;
+}
+
+.card-login form .form-group {
+    margin-bottom: 12px;
+}
+
+.card-login form input[type="submit"]{
+    margin-top: 12px;
+}
+
+.card-login form input {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.btn-default {
+    background-color: #3c165f;
+    color: white;
+}
+
+.btn-default:hover {
+     background-color: #541f85;
+     color: white;
+} 
