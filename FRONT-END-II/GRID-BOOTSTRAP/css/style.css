@@ -1,0 +1,12 @@
+header {
+    height: 15vh;
+}
+
+#apresentacao {
+    height: 80vh;
+    margin: 20px 0;
+}
+
+.textos-apresencao {
+    width: max-content;
+}

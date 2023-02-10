@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="container-fluid">
+        
+
+        <section class="container">
+            <h1>Contatos</h1>
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>João da Silva</td>
+                        <td>(51)9999-8888</td>
+                        <td>
+                            <button class="btn btn-success" aria-label="Editar">
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button class="btn btn-danger" aria-label="Apagar">
+                                <i class="bi bi-trash3"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- BOTAO CRIAR CONTATO FLUTUANTE -->
+    <button class="btn btn-primary rounded-circle float-button float-end" data-bs-toggle="modal" data-bs-target="#modal-criar">
+        <i class="bi bi-plus-lg"></i>
+    </button>
+
+
+    <!-- Modal CADASTRAR CONTATO -->
+    <div class="modal fade" id="modal-criar" tabindex="-1" aria-labelledby="titleModalCreate" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titleModalCreate">Cadastrar Contato</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <form id="form-cadastro" class="needs-validation" novalidate>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome: </label>
+                            <input type="text" class="form-control" id="nome" minlength="3" required placeholder="Ex: João da Silva">
+                            <div class="invalid-feedback">
+                                Por favor, informe o nome do contato
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone: </label>
+                            <input type="text" class="form-control" minlength="15" maxlength="15" id="telefone" required placeholder="(51) 99999-8888">
+                            <div class="invalid-feedback">
+                                Por favor, informe o telefone do contato
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
