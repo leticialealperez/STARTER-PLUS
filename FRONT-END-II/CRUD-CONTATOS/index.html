@@ -16,10 +16,10 @@
     <main class="container-fluid">
         
 
-        <section class="container">
-            <h1>Contatos</h1>
-            <hr>
-            <table class="table">
+        <section class="container mt-5">
+            <h1 class="text-primary">Contatos</h1>
+            <hr class="mb-5">
+            <table class="table table-hover">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -28,20 +28,8 @@
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>João da Silva</td>
-                        <td>(51)9999-8888</td>
-                        <td>
-                            <button class="btn btn-success" aria-label="Editar">
-                                <i class="bi bi-pencil-square"></i>
-                            </button>
-                            <button class="btn btn-danger" aria-label="Apagar">
-                                <i class="bi bi-trash3"></i>
-                            </button>
-                        </td>
-                    </tr>
+                <tbody id="lista-contatos">
+                    <!-- aqui será inserido pelo js -->
                 </tbody>
             </table>
         </section>
@@ -73,7 +61,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="telefone" class="form-label">Telefone: </label>
-                            <input type="text" class="form-control" minlength="15" maxlength="15" id="telefone" required placeholder="(51) 99999-8888">
+                            <input type="text" class="form-control" minlength="11" maxlength="11" id="telefone" required placeholder="51999778899">
                             <div class="invalid-feedback">
                                 Por favor, informe o telefone do contato
                             </div>
@@ -86,6 +74,77 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal EXCLUIR CONTATO -->
+    <div class="modal fade" id="modal-excluir" tabindex="-1" aria-labelledby="titleModalDelete" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titleModalDelete">Excluir Contato</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que realizar a exclusão? Esta operação é definitiva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="btn-delete">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal ATUALIZAR CONTATO -->
+    <div class="modal fade" id="modal-atualizar" tabindex="-1" aria-labelledby="titleModalUpdate" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titleModalUpdate">Atualizar Contato</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <form id="form-atualizar" class="needs-validation" novalidate>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome: </label>
+                            <input type="text" class="form-control" id="nome-atualizar" minlength="3" required
+                                placeholder="Ex: João da Silva">
+                            <div class="invalid-feedback">
+                                Por favor, informe o nome do contato
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone: </label>
+                            <input type="text" class="form-control" minlength="11" maxlength="11" id="telefone-atualizar" required
+                                placeholder="51999778899">
+                            <div class="invalid-feedback">
+                                Por favor, informe o telefone do contato
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TOAST DA PÁGINA -->
+    <div id="toast-app" class="toast align-items-center border-0 toast-position" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="espaco-mensagem">
+                <!-- vai ser inserida pelo js -->
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+
+
     
 
 
