@@ -1,0 +1,25 @@
+1 - npm init -y
+Inicializa um projeto em NodeJS
+
+2 - instalação dos pacotes/dependencias do projeto (TS)
+npm i typescript
+
+3 - Configuração do transpilador do Typescript
+npx tsc --init 
+
+npx -> usado para executar um pacote utilizando o NodeJS
+tsc -> Typescript Config
+--init -> inicializar 
+
+
+4 - criar a pasta onde estará os arquivos TS - src -> source
+
+5 - criar a pasta onde ficará armazenado os arquivos JS gerados a partir da transpilação/transformação
+dist -> destino
+
+6 - descomentar o comando "rootDir" no arquivo tsConfig e substituir o valor por "./src"
+
+7 - descomentar o comando "outDir" no arquivo tsConfig e substituir o valor por "./dist"
+
+8 - para transpilar precisar executar a biblioteca do typescript utilizando o comando
+npx tsc

@@ -1,0 +1,16 @@
+{
+  "name": "typescript-setup",
+  "version": "1.0.0",
+  "description": "Um texto de descrição sobre o projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "@leticialealperez",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
