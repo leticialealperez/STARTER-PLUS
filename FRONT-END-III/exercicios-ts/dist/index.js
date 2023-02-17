@@ -35,3 +35,7 @@ const functions_1 = require("./functions");
     quantidade: 1,
 });
 console.log(produtos_1.default);
+// deve ser possivel atualizar qualquer informação de um produto
+// escreva uma função que receba as propriedades que serão atualizadas por parametro
+// e atualize os dados do produto
+// OBS: apenas 1 campo deve ser obrigatorio de ser enviado
