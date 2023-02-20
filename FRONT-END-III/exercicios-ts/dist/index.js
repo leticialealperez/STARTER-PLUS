@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const uuid_1 = require("uuid");
 const produtos_1 = __importDefault(require("./database/produtos"));
 const functions_1 = require("./functions");
 // criar uma função que receba todas as informações necessarias para criar um novo produto e adicione em uma lista previamente definida
@@ -13,29 +12,43 @@ const functions_1 = require("./functions");
 // não default ( utilizando {}) - pode ser exportado varios modulos no mesmo arquivo && não podemos alterar o nome na hora da importação
 // CREATE - criar um novo produto
 (0, functions_1.novoProduto)({
-    id: (0, uuid_1.v4)(),
+    id: '1',
     nome: 'Camisa da Growdev',
     categoria: {
         nome: 'Vestuário',
-        tags: []
+        tags: ['ADULTO', 'PROMOÇÃO', 'LIQUIDAÇÃO']
     },
     genero: 'F',
-    preco: 5000,
+    preco: 100,
     quantidade: 1
 });
 (0, functions_1.novoProduto)({
-    id: (0, uuid_1.v4)(),
-    nome: 'Camisa da Growdev 2',
+    id: '2',
+    nome: 'Tenis da Growdev 2',
     categoria: {
-        nome: 'Vestuário',
-        tags: [],
+        nome: 'Calçados',
+        tags: ['LIQUIDAÇÃO'],
     },
     genero: 'F',
-    preco: 5000,
-    quantidade: 1,
+    preco: 500,
+    quantidade: 2,
+});
+(0, functions_1.novoProduto)({
+    id: '3',
+    nome: 'Tenis da Growdev 3',
+    categoria: {
+        nome: 'Calçados',
+        tags: ['ADULTO', 'LIQUIDAÇÃO'],
+    },
+    genero: 'F',
+    preco: 1500,
+    quantidade: 2,
 });
 console.log(produtos_1.default);
-// deve ser possivel atualizar qualquer informação de um produto
-// escreva uma função que receba as propriedades que serão atualizadas por parametro
-// e atualize os dados do produto
-// OBS: apenas 1 campo deve ser obrigatorio de ser enviado
+// atualizarProduto('1', {nome: 'Atualizado'})
+// console.log(listaProdutos);
+// excluir('2')
+// listarTudo()
+// listarTodosProdutos('calçados')
+// listarProdutosPreco(100, 500)
+(0, functions_1.listagemProdutosTag)("ADULTO");

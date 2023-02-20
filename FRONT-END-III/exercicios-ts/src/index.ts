@@ -1,7 +1,7 @@
 import { Tag as MinhaTag, Produto, Categoria, Genero } from './types'
 import { v4 as gerarId } from 'uuid'
 import listaProdutos from './database/produtos'
-import { novoProduto } from './functions'
+import { atualizarProduto, excluir, listagemProdutosTag, listarProdutosPreco, listarTodosProdutos, listarTudo, novoProduto, } from './functions'
 
 
 // criar uma função que receba todas as informações necessarias para criar um novo produto e adicione em uma lista previamente definida
@@ -17,34 +17,53 @@ import { novoProduto } from './functions'
 
 // CREATE - criar um novo produto
 novoProduto({
-    id: gerarId(),
+    id: '1',
     nome: 'Camisa da Growdev',
     categoria: {
         nome: 'Vestuário',
-        tags: []
+        tags: ['ADULTO', 'PROMOÇÃO', 'LIQUIDAÇÃO']
     },
     genero: 'F',
-    preco: 5000,
+    preco: 100,
     quantidade: 1
 })
 
 novoProduto({
-  id: gerarId(),
-  nome: 'Camisa da Growdev 2',
+  id:'2',
+  nome: 'Tenis da Growdev 2',
   categoria: {
-    nome: 'Vestuário',
-    tags: [],
+    nome: 'Calçados',
+    tags: ['LIQUIDAÇÃO'],
   },
   genero: 'F',
-  preco: 5000,
-  quantidade: 1,
+  preco: 500,
+  quantidade: 2,
+});
+
+novoProduto({
+  id:'3',
+  nome: 'Tenis da Growdev 3',
+  categoria: {
+    nome: 'Calçados',
+    tags: ['ADULTO', 'LIQUIDAÇÃO'],
+  },
+  genero: 'F',
+  preco: 1500,
+  quantidade: 2,
 });
 
 console.log(listaProdutos);
 
+// atualizarProduto('1', {nome: 'Atualizado'})
 
-// deve ser possivel atualizar qualquer informação de um produto
-// escreva uma função que receba as propriedades que serão atualizadas por parametro
-// e atualize os dados do produto
-// OBS: apenas 1 campo deve ser obrigatorio de ser enviado
+// console.log(listaProdutos);
 
+// excluir('2')
+
+// listarTudo()
+
+// listarTodosProdutos('calçados')
+
+// listarProdutosPreco(100, 500)
+
+// listagemProdutosTag('ADULTO')

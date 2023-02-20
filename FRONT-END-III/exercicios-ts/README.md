@@ -2,11 +2,11 @@
 2 - Declaração dos modelos de dados (interfaces e types) - STATUS: 🆗
 3 - Declaração da variável que irá armazenar a lista de produtos - STATUS: 🆗
 4 - Desenvolvimento da função de cadastro de um novo produto - STATUS: 🆗
-5 - Desenvolvimento da função de atualização de um produto - STATUS: ausente
-6 - Desenvolvimento da função de exclusão de um produto - STATUS: ausente
-7 - Desenvolvimento da função de listagem dos produtos - STATUS: ausente
-8 - Desenvolvimento da função de listagem dos produtos por categoria - STATUS: ausente
-9 - Desenvolvimento da função de listagem os produtos por faixa de preço (min e max) - STATUS: ausente
+5 - Desenvolvimento da função de atualização de um produto - STATUS: 🆗
+6 - Desenvolvimento da função de exclusão de um produto - STATUS: 🆗
+7 - Desenvolvimento da função de listagem dos produtos - STATUS: 🆗
+8 - Desenvolvimento da função de listagem dos produtos por categoria - STATUS: 🆗
+9 - Desenvolvimento da função de listagem os produtos por faixa de preço (min e max) - STATUS: 🆗
 10 - Desenvolvimento da função de listagem dos produtos por tags - STATUS: ausente
 11 - Desenvolvimento da função de adicionar uma nova tag à categoria de um produto - STATUS: ausente
 
