@@ -5,6 +5,7 @@ import listarTudo from './listarTodos';
 import listarTodosProdutos from './listarTodosProdutos';
 import listarProdutosPreco from './listarProdutoPreco';
 import listagemProdutosTag from './listagemProdutosTag';
+import adicionaTag from './adicionaTag';
 
 
-export { novoProduto, atualizarProduto, excluir, listarTudo, listarTodosProdutos, listarProdutosPreco, listagemProdutosTag }
+export { novoProduto, atualizarProduto, excluir, listarTudo, listarTodosProdutos, listarProdutosPreco, listagemProdutosTag, adicionaTag }

@@ -1,7 +1,7 @@
 import { Tag as MinhaTag, Produto, Categoria, Genero } from './types'
 import { v4 as gerarId } from 'uuid'
 import listaProdutos from './database/produtos'
-import { atualizarProduto, excluir, listagemProdutosTag, listarProdutosPreco, listarTodosProdutos, listarTudo, novoProduto, } from './functions'
+import { adicionaTag, atualizarProduto, excluir, listagemProdutosTag, listarProdutosPreco, listarTodosProdutos, listarTudo, novoProduto, } from './functions'
 
 
 // criar uma função que receba todas as informações necessarias para criar um novo produto e adicione em uma lista previamente definida
@@ -67,3 +67,5 @@ console.log(listaProdutos);
 // listarProdutosPreco(100, 500)
 
 // listagemProdutosTag('ADULTO')
+
+// adicionaTag('3', ['ADULTO', 'PROMOÇÃO'])
