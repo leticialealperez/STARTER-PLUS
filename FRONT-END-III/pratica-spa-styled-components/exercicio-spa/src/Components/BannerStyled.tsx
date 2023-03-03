@@ -14,6 +14,8 @@ const Banner = styled.section<BannerProps>`
     justify-content: center;
     align-items: center;
     width: 100vw;
+    color: #fff;
+    width: 100%;
 
 `
 

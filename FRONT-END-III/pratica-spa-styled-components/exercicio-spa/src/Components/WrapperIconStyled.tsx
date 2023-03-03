@@ -8,7 +8,8 @@ const WrapperIconStyled = styled.section`
 
     svg {
         font-size: 50px;
-        color: rgb(130, 87, 229);
+        color: ${props => props.theme.color};
+        margin-bottom: 20px;
     }
 `
 

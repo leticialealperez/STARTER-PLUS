@@ -1,14 +1,16 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './Config/GlobalStyle';
+import theme from './Config/theme';
 import AppRoutes from './Routes/AppRoutes';
 
 
 function App() {
   return (
-    <React.Fragment>
+    <ThemeProvider theme={theme.dark}>
       <GlobalStyle />
       <AppRoutes />
-    </React.Fragment>
+    </ThemeProvider>
 
   );
 }
